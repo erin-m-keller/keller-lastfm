@@ -7,7 +7,7 @@ users to search for musical artists. Created using [LastFM API](https://www.last
 
 ## Screenshot
 
-![LastFmAppScreen](./src/assets/images/finished-product.png)
+![LastFmAppScreen](./src/assets/finished-product.png)
 
 ## Deployed page
 
