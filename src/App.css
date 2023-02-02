@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
-}
+/************************************************
+*
+*   Main Stylesheet
+*   @version (1.0)
+*   @date (2023)
+*
+*   1.) GENERAL ______________________ @general
+*   2.) HEADER _______________________ @header
+*   3.) MAIN CONTENT _________________ @main
+*   4.) FOOTER _______________________ @footer
+*
+************************************************/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/************************************************
+   GENERAL                              @general
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+   The base styles for the page, text
+   and links. Includes utility class styles
+************************************************/
+:root {
+  --bg-color-one: #2e0219;
+  --bg-color-two: #4a001f;
+  --bg-color-three: #6a0f49;
+  --bg-color-four: #a7c4c2;
+  --bg-color-five: #97efe9;
+  --font-main-style: "Roboto Slab", serif;
+  --font-sub-style: "Dosis", sans-serif;
+  --font-timer-style: "Secular One", sans-serif;
+  --font-aboutme-style: "Merienda", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--bg-color-four);
+}
+p {
+  font-family: var(--font-sub-style);
 }
 
-.App-link {
-  color: #61dafb;
+/************************************************
+   HEADER                                @header
+
+   The styles for the header which
+   includes a title, an image and a 
+   horizontal menu (desktop and mobile)
+************************************************/
+.banner {
+  padding: 1rem;
+  color: #FFF;
+  background-color: var(--bg-color-one);
+  width: 100%;
+  height: 12rem;
+  text-align: center;
+  border-bottom: 6px solid var(--bg-color-two);
+}
+.banner h1 {
+  padding-bottom: 1rem;
+  font-size: 28px;
+}
+.banner .custom-search {
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+}
+.banner .custom-search input[type=text] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  font-family: var(--font-main-style);
+  border: 3px solid var(--bg-color-three);
+}
+.banner .custom-search .btn-search {
+  position: absolute;
+  right: 67px;
+  cursor: pointer;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: var(--bg-color-one);
+  color: #FFF;
+  font-family: var(--font-main-style);
+  font-weight: 600;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  z-index: 2;
+  font-size: 18px;
+}
+.banner .custom-search .btn-clear {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: var(--bg-color-five);
+  color: #000;
+  font-family: var(--font-main-style);
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  z-index: 2;
+  font-size: 18px;
+}
+.no-data {
+  height: 72vh;
+  padding: 3rem;
+  text-align: center;
+}
+#search:focus {
+    border: 2px solid var(--bg-color-five);
+    outline-style: solid;
+    outline-color: var(--bg-color-five);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/************************************************
+   MAIN CONTENT                             @main
+
+   The styles for the footer
+************************************************/
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  .wrapper { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .wrapper { grid-template-columns: repeat(3, 1fr); }
+}
+.wrapper .artist-card {
+  border: 1px solid var(--bg-color-one);
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow:0 2px 10px var(--bg-color-one);
+}
+.wrapper .artist-card div.post-wrapper {
+  height: 6rem;
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-color-five);
+}
+.wrapper .artist-card a:before,
+.wrapper .artist-card a:after {
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background: #fff;
+  transition: 0.5s;
+  z-index:-1;
+}
+.wrapper .artist-card a:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.wrapper .artist-card a:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+}
+.wrapper .artist-card .post-container {
+  margin: 20px 20px 0 0;  
+  border: 5px solid #333;
+  overflow: auto;
+}
+.wrapper .artist-card .post-thumb {
+  float: left;
+  height: 6rem;
+  width: 6rem;
+  margin-right: 1rem;
+}
+.wrapper .artist-card .post-thumb img {
+  display: block;
+  padding: 0.25rem;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .artist-card .post-content,
+.wrapper .artist-card .stream-box {
+  height: 6rem;
+  padding: 1rem;
+}
+.wrapper .artist-card .stream-box {
+  height: 6rem;
+  background-color: var(--bg-color-three);
+  color: #FFF;
+  padding: 1rem;
+}
+.wrapper .artist-card .stream-box a {
+  color: #FFF;
+}
+.wrapper .artist-card .post-title {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+/************************************************
+   FOOTER                                 @footer
+
+   The styles for the footer
+************************************************/
+.footer {
+  text-align: center;
+  height: 3rem;
+  width: 100%;
+  background-color: var(--bg-color-one);
+  display: table;
+  padding: 0.5rem;
+}
+.footer h4 {
+  font-family: var(--font-sub-style);
+  font-size: 1.125rem;
+  font-weight: normal;
+  color: #FFF;
+}
+.footer a {
+  font-family: var(--font-sub-style);
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #FFF;
+}
+.footer div.vertical-center {
+  display:table-cell;
 }
