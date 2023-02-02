@@ -92,7 +92,7 @@ class App extends React.Component {
               }
             </main>
             <footer className="footer">
-              &copy; 2023 Erin Keller
+              <h4>&copy; 2023 Erin Keller</h4>
             </footer>
         </div>
       );
