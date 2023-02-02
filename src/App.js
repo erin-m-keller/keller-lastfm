@@ -36,7 +36,7 @@ class App extends React.Component {
       e.preventDefault();
       let apiKey = process.env.REACT_APP_LASTFM_KEY;
       let artistName = this.state.inputValue.replace(/ /g, '+'); /* replace spaces with + */
-      fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${artistName}&api_key=${apiKey}&format=json`).then((res) => res.json()).then((json) => {
+      fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${artistName}&api_key=${apiKey}&format=json`).then((res) => res.json()).then((json) => {
         let artistData = json.results.artistmatches.artist;
         this.setState({
             lastfmData: artistData,
