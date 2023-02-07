@@ -54,12 +54,14 @@ class App extends React.Component {
       return (
         <div className = "App">
             <header className="banner">
-              <h1>LastFM Music Artist<br />Search Engine</h1>
-              <form className="custom-search">
-                  <input id="search" type="text" className="input" value={inputValue} onChange={e => this.handleChange(e)} placeholder="Search for an artist..."/>
-                  <button id="search" className="btn-search" onClick={e => this.submitSearch(e)}>Search</button>
-                  <button id="clear" className="btn-clear" onClick={e => this.clearSearch(e)}>Clear</button>
-              </form>
+              <div className="header-wrapper">
+                <h1>LastFM Music Artist<br />Search Engine</h1>
+                <form className="custom-search">
+                    <input id="search" type="text" className="input" value={inputValue} onChange={e => this.handleChange(e)} placeholder="Search for an artist..."/>
+                    <button className="btn-search" onClick={e => this.submitSearch(e)}>Search</button>
+                    <button className="btn-clear" onClick={e => this.clearSearch(e)}>Clear</button>
+                </form>
+              </div>
             </header> 
             <main>
               {!DataisLoaded ? 
@@ -74,10 +76,10 @@ class App extends React.Component {
                       lastfmData.map((artist,idx) => ( 
                         <article className="artist-card" key={idx}>
                           <div className="post-wrapper">
-                            <div class="post-thumb">
-                              <img src={vinylImg} alt={artist.name} />
-                            </div>
                             <div class="post-content">
+                              <div class="post-thumb">
+                                <img src={vinylImg} alt={artist.name} />
+                              </div>
                               <p>Artist name:&nbsp;<strong>{artist.name}</strong></p>
                               <p># Listeners:&nbsp;<strong>{this.numberFormat(artist.listeners)}</strong></p>
                             </div>
@@ -93,6 +95,7 @@ class App extends React.Component {
             </main>
             <footer className="footer">
               <h4>&copy; 2023 <a href="https://erin-m-keller.github.io/keller-portfolio/" target="_blank" rel="noreferrer">Erin Keller</a></h4>
+              <p><a href="https://www.flaticon.com/free-icons/song" title="song icons">Song icons created by Freepik - Flaticon</a></p>
             </footer>
         </div>
       );
