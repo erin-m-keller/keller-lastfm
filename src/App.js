@@ -82,7 +82,7 @@ class App extends React.Component {
                               <p># Listeners:&nbsp;<strong>{this.numberFormat(artist.listeners)}</strong></p>
                             </div>
                             <div className="stream-box">
-                              <p>Listen to the stream:&nbsp;<br /><a href={artist.url} target="_blank"><strong>{artist.name}</strong></a></p>
+                              <p>Listen to the stream:&nbsp;<br /><a href={artist.url} target="_blank" rel="noreferrer"><strong>{artist.name}</strong></a></p>
                             </div>
                           </div>
                         </article>
@@ -92,7 +92,7 @@ class App extends React.Component {
               }
             </main>
             <footer className="footer">
-              <h4>&copy; 2023 Erin Keller</h4>
+              <h4>&copy; 2023 <a href="https://erin-m-keller.github.io/keller-portfolio/" target="_blank" rel="noreferrer">Erin Keller</a></h4>
             </footer>
         </div>
       );
