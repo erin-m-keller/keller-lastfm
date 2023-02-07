@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lastfm-app/static/css/main.fe38fd8b.css",
+    "main.css": "/lastfm-app/static/css/main.717cd87e.css",
     "main.js": "/lastfm-app/static/js/main.fdb83dad.js",
     "static/js/787.a8b1dafb.chunk.js": "/lastfm-app/static/js/787.a8b1dafb.chunk.js",
     "static/media/vinyl.jpg": "/lastfm-app/static/media/vinyl.8d6fcb4567f4138d16bb.jpg",
     "index.html": "/lastfm-app/index.html",
-    "main.fe38fd8b.css.map": "/lastfm-app/static/css/main.fe38fd8b.css.map",
+    "main.717cd87e.css.map": "/lastfm-app/static/css/main.717cd87e.css.map",
     "main.fdb83dad.js.map": "/lastfm-app/static/js/main.fdb83dad.js.map",
     "787.a8b1dafb.chunk.js.map": "/lastfm-app/static/js/787.a8b1dafb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe38fd8b.css",
+    "static/css/main.717cd87e.css",
     "static/js/main.fdb83dad.js"
   ]
 }
