@@ -11,8 +11,8 @@ users to search for musical artists. Created using [LastFM API](https://www.last
 
 ## Deployed page
 
-Page published at: [https://erin-m-keller.github.io/lastfm-app/](https://erin-m-keller.github.io/lastfm-app/)
+[View Published Page](https://erin-m-keller.github.io/lastfm-app/)
 
 ## License
 
-Please refer to the LICENSE in the repo.
+[MIT](https://choosealicense.com/licenses/mit/)
