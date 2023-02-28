@@ -11,7 +11,7 @@ users to search for musical artists. Created using [LastFM API](https://www.last
 ![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
 ![javaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![reactJs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![bulma](./assets/images/bulma.svg)
+![bulma](./src/assets/images/bulma.svg)
 
 ## Screenshot
 
