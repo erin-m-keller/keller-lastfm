@@ -1,6 +1,7 @@
 import React from "react";
-import './App.css';
-import vinylImg from "./assets/vinyl.jpg";
+import './assets/css/styles.css';
+import './assets/css/bulma.min.css';
+import vinylImg from "./assets/images/vinyl.jpg";
 
 class App extends React.Component {
   /* initialize state */
@@ -53,16 +54,33 @@ class App extends React.Component {
       const { DataisLoaded, lastfmData, inputValue } = this.state;
       return (
         <div className = "App">
-            <header className="banner">
+            <header>
+              <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item logo" href="./">
+                    <span class="icon">
+                      <i class="fa fa-solid fa-music"></i>
+                    </span>
+                    <span class="logo-txt">&nbsp;&nbsp;LastFM Music Artist Search Engine</span>
+                  </a>    
+                  <a role="button" href="#" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="side-bar" onclick="toggleNav()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+              </nav>
+            </header>
+            <section className="banner">
               <div className="header-wrapper">
                 <h1>LastFM Music Artist<br />Search Engine</h1>
                 <form className="custom-search">
-                    <input id="search" type="text" className="input" value={inputValue} onChange={e => this.handleChange(e)} placeholder="Search for an artist..."/>
-                    <button className="btn-search" onClick={e => this.submitSearch(e)}>Search</button>
-                    <button className="btn-clear" onClick={e => this.clearSearch(e)}>Clear</button>
+                    <input id="search" type="text" className="input is-primary" value={inputValue} onChange={e => this.handleChange(e)} placeholder="Search for an artist..."/>
+                    <button className="btn-search button is-primary" onClick={e => this.submitSearch(e)}>Search</button>
+                    <button className="btn-clear button is-link" onClick={e => this.clearSearch(e)}>Clear</button>
                 </form>
               </div>
-            </header> 
+            </section> 
             <main>
               {!DataisLoaded ? 
                 <section className="no-data">
