@@ -19,7 +19,7 @@ users to search for musical artists. Created using [LastFM API](https://www.last
 
 ## Deployed page
 
-[View Published Page](https://erin-m-keller.github.io/lastfm-app/)
+[View Published Page](https://erin-m-keller.github.io/keller-lastfm/)
 
 ## License
 
