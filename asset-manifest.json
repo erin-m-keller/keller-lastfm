@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lastfm-app/static/css/main.a96c4761.css",
-    "main.js": "/lastfm-app/static/js/main.70d8a808.js",
-    "static/js/787.a8b1dafb.chunk.js": "/lastfm-app/static/js/787.a8b1dafb.chunk.js",
-    "static/media/vinyl.jpg": "/lastfm-app/static/media/vinyl.8d6fcb4567f4138d16bb.jpg",
-    "index.html": "/lastfm-app/index.html",
-    "main.a96c4761.css.map": "/lastfm-app/static/css/main.a96c4761.css.map",
-    "main.70d8a808.js.map": "/lastfm-app/static/js/main.70d8a808.js.map",
-    "787.a8b1dafb.chunk.js.map": "/lastfm-app/static/js/787.a8b1dafb.chunk.js.map"
+    "main.css": "/keller-lastfm/static/css/main.a96c4761.css",
+    "main.js": "/keller-lastfm/static/js/main.42187a07.js",
+    "static/js/787.5c3abe3e.chunk.js": "/keller-lastfm/static/js/787.5c3abe3e.chunk.js",
+    "static/media/vinyl.jpg": "/keller-lastfm/static/media/vinyl.8d6fcb4567f4138d16bb.jpg",
+    "index.html": "/keller-lastfm/index.html",
+    "main.a96c4761.css.map": "/keller-lastfm/static/css/main.a96c4761.css.map",
+    "main.42187a07.js.map": "/keller-lastfm/static/js/main.42187a07.js.map",
+    "787.5c3abe3e.chunk.js.map": "/keller-lastfm/static/js/787.5c3abe3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a96c4761.css",
-    "static/js/main.70d8a808.js"
+    "static/js/main.42187a07.js"
   ]
 }
